@@ -8,7 +8,9 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"prepare": "svelte-kit sync"
+		"prepare": "svelte-kit sync",
+		"postbuild": "vite svelte-sitemap --domain https://converto.vercel.app"
+
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
